@@ -1,0 +1,37 @@
+REQUEST
+
+curl -H "X-Auth-Token: 1g1QECJoZZFE8N9bXxl0I1174q7xeZ_M93REHhcH81e" \
+     -H "X-User-Id: AoxEcWqZ6YafqLGW7" \
+     -H "Content-type:application/json" \
+     http://localhost:3000/api/v1/users.create \
+     -d '{"name": "Rume", "email": "Rume@placeey.com", "password": "password1234", "username": "LitRume"}'
+
+
+RESPONSE
+
+  {
+    "user": {
+	"_id": "wHG4y9JN4KxTnf9Kq",
+	"createdAt": "2021-07-11T09:21:17.004Z",
+	"username": "LitRume",
+	"emails": [
+	   {
+	      "address": "Rume@placeey.com",
+              "verified": false
+	   }
+	],
+	"type": "user",
+	"status": "offline",   
+	"active": true,
+	"_updatedAt": "2021-07-11T09:21:17.106Z",
+	"__rooms": [
+	    "GENERAL"
+	],
+	"roles": [
+	    "user"
+	],
+	"name": "Rume",
+	"settings": {}
+    },
+    "success": true
+  }

@@ -1,0 +1,35 @@
+REQUEST
+
+curl -H "X-Auth-Token: 1g1QECJoZZFE8N9bXxl0I1174q7xeZ_M93REHhcH81e" \
+     -H "X-User-Id: AoxEcWqZ6YafqLGW7" \
+     http://localhost:3000/api/v1/rooms.info?roomName=rocketeer
+
+
+RESPONSE
+
+{
+  "room": {
+    "_id": "ARtCmajNu5AcCZinB",
+    "fname":"rocketeer",
+    "customFields":{},
+    "description":"TeamGrowth",
+    "broadcast":false,
+    "encrypted":false,
+    "name":"rocketeer",
+    "t":"p",
+    "msgs":3,
+    "usersCount":1,
+    "u": {
+      "_id": "AoxEcWqZ6YafqLGW7",
+      "username": "Paul"
+     },
+    "ts": "2021-07-11T00:32:39.885Z",
+    "ro": false,
+    "default": false,
+    "sysMes": true,
+    "_updatedAt": "2021-07-11T10:00:11.008Z",
+    "topic":"How to grow",
+    "announcement":"We have grown"
+   },
+   "success":true
+}
